@@ -1,0 +1,94 @@
+.main {
+}
+
+      <!-- main -- >
+  <main class="body__main main">
+
+       <!-- cover -->
+    <section id="cover" class="main__section cover">
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="main__section menu">
+    </section>
+
+    <!-- chips -->
+    <section id="chips" class="main__section chips">
+    </section>
+
+    <!-- interior -->
+    <section id="interior" class="main__section interior">
+    </section>
+
+    <!-- reviews -->
+    <section id="reviews" class="main__section reviews">
+    </section>
+
+    <!-- reservation -->
+    <section id="reservation" class="main__section reservation">
+    </section>
+
+    </main>
+
+    <!-- cover -->
+    <section id="cover" class="main__section cover">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="main__section menu">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    <!-- chips -->
+    <section id="chips" class="main__section chips">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    <!-- interior -->
+    <section id="interior" class="main__section interior">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    <!-- reviews -->
+    <section id="reviews" class="main__section reviews">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    <!-- reservation -->
+    <section id="reservation" class="main__section reservation">
+        <div class="main__section-container container">
+        </div>
+    </section>
+
+    .main {
+}
+
+.main__section {
+}
+
+.main__section-container {
+}
+
+.main {
+}
+
+.main__section {
+}
+
+.main__section-container {
+}
+
+.main__section-header {
+}
+
+.main__section-header-text {
+}
+
+.main__section-text {
+}
