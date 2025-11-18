@@ -38,3 +38,10 @@ a {
 ul {
     list-style: none;
 }
+
+/* -------------media---------------- */
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: var(--page-font-size-html);
+    }
+}

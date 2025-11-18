@@ -2,19 +2,94 @@
 }
 
 .main__section {
-}
+        min-height: 100vh;
+        display: flex;
+        padding-top: var(--header-height);
+        padding-bottom: 2rem;
+    }
 
 .main__section-container {
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 .main__section-header {
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: sticky;
+        top: var(--header-height);
+        z-index: 20;
+    }
 
 .main__section-header-text {
-}
+        display: flex;
+        align-items: center;
+        font-size: 4rem;
+        font-family: "Open Sans 600", sans-serif;
+    }
 
 .main__section-text {
-}
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: "Open Sans italic", sans-serif;
+    }
 
 .main__section-block {
+        width: 100%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+.main__section-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main__section-container_reverse {
+        flex-direction: row-reverse;
+    }
+
+
+/* ----------------media---------------- */
+@media screen and (max-width: 1280px) {
+    .main__section {
+        min-height: auto;
+        padding-bottom: var(--header-height);
+    }
+    .main__section-container,
+    .main__section-container_reverse {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .main__section-header {
+        margin-bottom: 5rem;
+        position: relative;
+        top: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .main__section-text {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main__section-text {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .main__section-text {
+        font-size: 1.9rem;
+    }
 }
