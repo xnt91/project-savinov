@@ -1,0 +1,34 @@
+@import "blocks/body.css";
+@import "blocks/header.css";
+@import "blocks/main.css";
+
+/* глобальные стили */
+@import "blocks/sections/cover.css";
+@import "blocks/sections/menu.css";
+@import "blocks/sections/reviews.css";
+@import "blocks/sections/chips.css";
+@import "blocks/sections/interior.css";
+@import "blocks/sections/reservation.css";
+
+/* глобальные стили */
+@import "globalStyles.css";
+
+/* переменные */
+@import "variables.css";
+@import "colors.css";
+
+/* шрифты */
+@import "fonts.css";
+
+/* Блоки */
+@import "blocks/body.css";
+@import "blocks/hamburger.css";
+@import "blocks/nav-list.css";
+
+@import "blocks/menu-item.css";
+
+@import "animations.css";
+
+@import "blocks/parallax.css";
+@import "blocks/chip-item.css";
+@import "blocks/menu-item.css";
