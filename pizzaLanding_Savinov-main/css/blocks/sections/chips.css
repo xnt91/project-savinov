@@ -1,2 +1,7 @@
 .chips {
+    color: var(--color-basic-2);
+}
+
+.chips__chips-items-block {
+    width: auto;
 }
