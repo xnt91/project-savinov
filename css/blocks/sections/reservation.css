@@ -1,7 +1,9 @@
-.resarvation {
+.reservation {
+    background-color: var(--color-basic-1);
+    color: white;
 }
 
-<header class="main__section-header">
-            <h2 class="main__section-header-text">Бронируйте!</h2>
-            <p class="main__section-text">Вы ведь уже очарованы нашим рестораном...<br>Назад пути нет</p>
-        </header>
+.reservation__block {
+    display: flex;
+    justify-content: center;
+}

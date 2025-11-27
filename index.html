@@ -1,101 +1,314 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пиццерия СЫТЫЙ МАРИО</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+    
+    <!-- favicon -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
 
-  <body class="body">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
-    <header class="body__header header">
-      <div class="header__container container">
-      </div>
-    </header>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- scripts -->
+    <script src="js/slider-reviews.js" defer></script>
+    <script src="js/collage.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    </head>
+
+    <body class="body">
+
+    <!-- header -->
+    <header class="js-body__header body__header header shadow-out">
+        <div class="header__container container">
+
+    <!-- logo -->
+    <a class="header__logo-container" href="/">
+
+    <div class="header__logo">
+        <img src="img/logo/logo-mario.svg" alt="СЫТЫЙ МАРИО логотип" />
+    </div>
+
+    <p class="header__logo-text">Сытый Марио</p>
+</a>
+
+<!-- contacts -->
+<div class="header__contacts-container">
+    <a class="header__telephone" href="tel:88005553535">
+        <div class="header__telephone-back"></div>
+        <span class="header__telephone-text">8-800-555-35-35</span>
+    </a>
+
+    <a class="header__address" href="https://yandex.ru/maps/-/CDbHA0ky">
+        <div class="header__address-back"></div>
+        <span class="header__address-text">Москва, ул. Ленина, д11</span>
+    </a>
+</div>
+
+<!-- navigation -->
+<nav class="header__nav">
+
+<ul class="js-nav-list nav-list nav-list_hided">
+
+<li class="js-nav-list__item nav-list__item">
+    <a class="nav-list__item-link" href="#cover">Главная</a>
+    <div class="nav-list__item-back nav-list__item-back_1"></div>
+</li>
+<li class="js-nav-list__item nav-list__item">
+    <a class="nav-list__item-link" href="#menu">Меню</a>
+    <div class="nav-list__item-back nav-list__item-back_2"></div>
+</li>
+<li class="js-nav-list__item nav-list__item">
+    <a class="nav-list__item-link" href="#chips">Фишечки</a>
+    <div class="nav-list__item-back nav-list__item-back_3"></div>
+</li>
+<li class="js-nav-list__item nav-list__item">
+    <a class="nav-list__item-link" href="#interior">Интерьер</a>
+    <div class="nav-list__item-back nav-list__item-back_4"></div>
+</li>
+<li class="js-nav-list__item nav-list__item">
+    <a class="nav-list__item-link" href="#reviews">Отзывы</a>
+    <div class="nav-list__item-back nav-list__item-back_5"></div>
+</li>
+
+</ul>
+</nav>
+
+<!-- burger -->
+<div class="js-hamburger header__hamburger hamburger">
+    <div class="hamburger__row"></div>
+    <div class="hamburger__row"></div>
+    <div class="hamburger__row"></div>
+</div>
+
+</div>
+</header>
 
     <main class="body__main main">
 
-      <!-- cover -->
-      <section id="cover" class="main__section cover">
+    <!-- cover -->
+    <section id="cover" class="main__section cover">
         <div class="main__section-container container">
         </div>
-      </section>
+    </section>
 
-      <!-- menu -->
-      <section id="menu" class="main__section menu">
-        <div class="main__section-container container">
+    <!-- menu -->
+    <section id="menu" class="main__section menu">
 
-          <header class="main__section-header menu__header">
+        <div class="main__section-container main__section-container_reverse container">
+
+            <header class="main__section-header menu__header">
             <h2 class="main__section-header-text">Меню</h2>
             <p class="main__section-text">Вкус просто сводит с ума (И это не лечится)</p>
-          </header>
+        </header>
 
-          <div class="main__section-block"></div>
+        <!-- block -->
+
+        <div class="main__section-block menu__section-block">
+        
+        <ul class="menu__nav-list">
+        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="0">Пицца</li>
+        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="1">Салаты</li>
+        <li class="js-menu__nav-item menu__nav-item" data-menu-list-id="2">Напитки</li>
+        </ul>
+
+        <div class="js-menu__menu-items-block menu__menu-items-block"></div>
 
         </div>
-      </section>
+        
+        </div>
+    </section>
 
-      <!-- chips -->
-      <section id="chips" class="main__section chips">
-        <div class="main__section-container container">
+    <!-- chips -->
+    <section id="chips" class="main__section chips parallax parallax_cute">
 
-          <header class="main__section-header">
+    <div class="parallax__mask parallax__mask_special-1"></div>
+
+    <div class="main__section-container container parallax__main">
+            
+            <header class="main__section-header">
             <h2 class="main__section-header-text">Фишечки</h2>
             <p class="main__section-text">Чем мы лучше остальных? Чем-то то и лучше!</p>
-          </header>
+        </header>
 
-          <div class="main__section-block"></div>
-
+        <!-- block -->
+    <div class="main__section-block chips__chips-items-block">
+        
+    <div class="chip-item">
+        <div class="chip-item__icon-container">
+            <span class="chip-item__icon material-symbols-outlined">landscape</span>
         </div>
-      </section>
+        <p class="chip-item__text">
+            <span class="chip-item__main-text">Шикарное местоположение</span>
+            <br>
+            Напротив входа – знаменитый лес смерти, позади ресторана – живописный химзавод!
+        </p>
+    </div>
+    
 
-      <!-- interior -->
-      <section id="interior" class="main__section interior">
-        <div class="main__section-container container">
+    <div class="chip-item">
+    <div class="chip-item__icon-container">
+        <span class="chip-item__icon material-symbols-outlined">restaurant</span>
+    </div>
+    <p class="chip-item__text">
+        <span class="chip-item__main-text">Наша пицца – самая нажористая!</span>
+        <br>
+        Зайдете к нам тощим – выкатитесь круглым и сытым!
+    </p>
+    </div>
 
-          <header class="main__section-header">
+    <div class="chip-item">
+    <div class="chip-item__icon-container">
+        <span class="chip-item__icon material-symbols-outlined">cake</span>
+    </div>
+    <p class="chip-item__text">
+        <span class="chip-item__main-text">Ваш праздник – наш праздник!</span>
+        <br>
+        Каждому имениннику – пицца на тесте из воска и фитилей!
+        </p>
+    </div>
+
+    <div class="chip-item">
+    <div class="chip-item__icon-container">
+        <span class="chip-item__icon material-symbols-outlined">savings</span>
+    </div>
+    <p class="chip-item__text">
+        <span class="chip-item__main-text">Копите наши Марио-коины с каждой покупкой!</span>
+        <br>
+        Просто копите и просто хвастайтесь бессмысленным капиталом!
+        </p>
+    </div>
+        
+        </div>
+    </section>
+
+    <!-- interior -->
+    <section id="interior" class="main__section interior">
+
+        <div class="main__section-container main__section-container_reverse container">
+
+            <header class="main__section-header">
             <h2 class="main__section-header-text">Интерьер</h2>
-            <p class="main__section-text">
-              При входе к нам вы просто упадете!<br>Мы не заделали дыру в полу под порогом
-            </p>
-          </header>
+            <p class="main__section-text">При входе к нам вы просто упадете!<br>Мы не заделали дыру в полу под порогом</p>
+        </header>
 
-          <div class="main__section-block"></div>
+    <!-- block -->
+    <div class="main__section-block collage">
 
-        </div>
-      </section>
+    <div class="collage__view-box collage-item shadow-out">
+    <img class="js-collage__view-box-img collage__view-box-img collage-item__img" src="/" alt="...">
+    </div>
 
-      <!-- reviews -->
-      <section id="reviews" class="main__section reviews">
+    <div class="collage__view-textbox collage-item shadow-out">
+    <p class="js-collage__view-text collage__view-text collage-item__text">
+        ...
+    </p>
+    </div>
+
+    <div class="collage__alt-textbox collage-item shadow-out">
+    <p class="collage__alt-text collage-item__text">
+        И другие <br class="collage-item__br"> Наши фото:
+    </p>
+    </div>
+
+    <ul class="js-collage__collage-items-list collage__collage-items-list">
+    </ul>
+
+    </div>
+
+    </div>
+    </section>
+
+    <!-- reviews -->
+    <section id="reviews" class="main__section reviews">
         <div class="main__section-container container">
 
-          <header class="main__section-header">
+            <header class="main__section-header">
             <h2 class="main__section-header-text">Отзывы</h2>
             <p class="main__section-text">Наши клиенты – лучшие... И их отзывы – прекрасны!</p>
-          </header>
+        </header>
 
-          <div class="main__section-block"></div>
-
+        <!-- block -->
+        <div class="main__section-block reviews__slider">
+        
+        <div class="js-reviews__sliderLine reviews__sliderLine">
         </div>
-      </section>
 
-      <!-- reservation -->
-      <section id="reservation" class="main__section reservation">
-        <div class="main__section-container container">
+        <button class="js-slider-btn-prev reviews__button reviews__button_prev shadow-out" type="button">
+            <span class="reviews__button-icon material-symbols-outlined">line_start_arrow_notch</span>
+        </button>
 
-          <header class="main__section-header">
+        <button class="js-slider-btn-next reviews__button reviews__button_next shadow-out" type="button">
+            <span class="reviews__button-icon material-symbols-outlined">line_end_arrow_notch</span>
+        </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- reservation -->
+    <section id="reservation" class="main__section reservation">
+        
+        <div class="main__section-container main__section-container_reverse container">
+
+            <header class="main__section-header">
             <h2 class="main__section-header-text">Бронируйте!</h2>
-            <p class="main__section-text">
-              Вы ведь уже очарованы нашим рестораном...<br>Назад пути нет
-            </p>
-          </header>
+            <p class="main__section-text">Вы ведь уже очарованы нашим рестораном...<br>Назад пути нет</p>
+        </header>
 
-          <div class="main__section-block"></div>
+        <!-- block -->
+        <div class="main__section-block reservation__block">
+    <form class="form" name="reservationForm" method="POST" action="https://formspree.io/f/xjkqyvzd">
+        <div class="input-box"> 
+            <input id="formFIO" class="input-box__input"
+                type="text" name="formFIO"
+                placeholder="Только буквы"
+                pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                minlength="2"
+                required>
+            <label for="formFIO" class="input-box__label">ФИО</label>
+        </div>
+
+        <div class="input-box">
+            <input id="formDate" class="input-box__input"
+                type="date" name="formDate" required>
+            <label for="formDate" class="input-box__label">Дата</label>
+        </div>
+
+        <div class="input-box">
+            <input id="formPlaces" class="input-box__input"
+                type="number" name="formPlaces"
+                placeholder="От 1 до 4"
+                min="1" max="4"
+                minlength="1" required>
+            <label for="formPlaces" class="input-box__label">Кол-во мест</label>
+        </div>
+
+        <div class="input-box">
+            <input id="formTel" class="input-box__input"
+                type="tel" name="formTel"
+                placeholder="8(XXX)-XXX-XX-XX"
+                pattern="8\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                required>
+            <label for="formTel" class="input-box__label">Телефон</label>
+        </div>
+
+        <button class="form__button" type="submit">Забронировать</button>
+        </form>
 
         </div>
-      </section>
+        
+    </div>
+    </section>
+
+
 
     </main>
-  </body>
+</body>
 </html>

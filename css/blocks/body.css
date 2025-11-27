@@ -1,5 +1,21 @@
-.body {}
+.body {
+        min-height: 100vh;
+        position: relative;
+    }
 
-.body__header {}
+.body__header {
+        width: 100%;
+        display: flex;
+        min-height: var(--header-height);
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
 
-.body__main {}
+.body__main {
+        min-height: calc(100vh - var(--header-height));
+    }
+
+.body__header_hided {
+  transform: translateY(calc(-1 * var(--header-height)));
+}
